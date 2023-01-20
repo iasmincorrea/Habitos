@@ -25,7 +25,3 @@ function save() {
 const data = JSON.parse(localStorage.getItem("NLWSetup@habits")) || {}
 nlwSetup.setData(data)
 nlwSetup.load()
-
-// const data = {
-//     food: ["01-01", "01-02", "01-03", "01-04", "01-05", "01-06"],
-// }
