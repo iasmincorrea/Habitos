@@ -14,8 +14,6 @@ Projeto criado a partir do evento NLW Setup - Trilha Explorer da Rocketseat.<br/
 
 ## 🚀 Tecnologias
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
-
 - HTML5 visando a semântica, acessibilidade, performance e SEO
 - CSS3 utilizando a metodologia BEM
 - JavaScript
