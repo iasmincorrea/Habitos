@@ -1,6 +1,6 @@
 const form = document.querySelector("#form-habits")
 const nlwSetup = new NLWSetup(form)
-const button = document.querySelector("header button")
+const button = document.querySelector(".header-button")
 
 button.addEventListener("click", add)
 form.addEventListener("change", save)
@@ -11,7 +11,6 @@ function add() {
     const dayExists = nlwSetup.dayExists(today)
 
     if(dayExists) {
-
         return
     } 
 
@@ -19,9 +18,9 @@ function add() {
 }
 
 function save() {
-    localStorage.setItem("NLWSetup@habits", JSON.stringify(nlwSetup.data))
+    localStorage.setItem("habits@habits", JSON.stringify(nlwSetup.data))
 }
 
-const data = JSON.parse(localStorage.getItem("NLWSetup@habits")) || {}
+const data = JSON.parse(localStorage.getItem("habits@habits")) || {}
 nlwSetup.setData(data)
 nlwSetup.load()

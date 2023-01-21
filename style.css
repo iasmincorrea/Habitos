@@ -5,25 +5,25 @@
 }
 
 body {
-  background-color: #09090a;
-  color: white;
+  background: #09090a;
+  color: #FFF;
   height: 100vh;
 }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
+.header {
   position: sticky;
   top: 0;
   background: #09090A;
   width: 100%;
   padding: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-button {
-  background-color: transparent;
+.header-button {
+  background: transparent;
   border: 1px solid #8B5CF6;
   border-radius: 8px;
   padding: 16px 24px;
@@ -40,7 +40,7 @@ button {
   font-weight: 600;
 }
 @media(max-width: 600px) {
-  button div {
+  .header-button__text {
     display: none;
   }
 }
@@ -93,7 +93,7 @@ button {
   text-align: center;
 }
 
-input {
+.day input {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -106,7 +106,7 @@ input {
   border-radius: 8px;
 }
 
-input:checked {
+.day input:checked {
   background: #8B5CF6;
   border: 2px solid #A78BFA;
 }
